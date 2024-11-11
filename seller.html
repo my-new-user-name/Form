@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="seller.css">
+</head>
+<body>
+    <header>
+        <h1>Shop Information Form</h1>
+    </header>
+    <main>
+        <form id="shop-form">
+            <label for="shop-name">Shop Name:</label>
+            <input type="text" id="shop-name" required>
+
+            <label for="pickup-address">Pickup Address:</label>
+            <input type="text" id="pickup-address" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="shop-confirmation" class="hidden"></div>
+
+        <header>
+            <h1>Business Registration Form</h1>
+        </header>
+        <form id="registration-form">
+            <label for="identity-proof">Identity Proof (Upload):</label>
+            <input type="file" id="identity-proof" accept="image/*" required>
+
+            <label for="business-license">Business License/Permit (Upload):</label>
+            <input type="file" id="business-license" accept="image/*" required>
+
+            <label for="sales-tax-registration">Sales Tax Registration (Upload):</label>
+            <input type="file" id="sales-tax-registration" accept="image/*" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="registration-confirmation" class="hidden"></div>
+
+        <header>
+            <h1>Product Listing Form</h1>
+        </header>
+        <form id="product-form">
+            <label for="product-title">Product Title:</label>
+            <input type="text" id="product-title" required>
+
+            <label for="product-description">Product Description:</label>
+            <textarea id="product-description" rows="4" required></textarea>
+
+            <label for="price">Price ($):</label>
+            <input type="number" id="price" min="0" step="0.01" required>
+
+            <label for="product-image">Product Image (Upload):</label>
+            <input type="file" id="product-image" accept="image/*" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="product-confirmation" class="hidden"></div>
+        <div id="success-message" class="hidden">Submitted successfully!</div>
+    </main>
+
+
+    <script src="seller.js"></script>
+</body>
+</html>
