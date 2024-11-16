@@ -12,7 +12,7 @@
     align-items: center;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    background-color: #ffefdd;
+    background-color: #ecedfd;
   }
   
   /* Form container styling */
@@ -43,14 +43,14 @@
     padding: 10px;
     border: none;
     border-radius: 4px;
-    background-color: #f00352;
+    background-color: #2a59f5;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
   }
   
   button:hover {
-    background-color: #fa4582;
+    background-color: #457efa;
   }
   
   #toggle-text {
@@ -58,7 +58,7 @@
   }
   
   #toggle-text a {
-    color: #f00352;
+    color: #2a59f5;
     text-decoration: none;
   }
   
