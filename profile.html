@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile | Job Website</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="OIP.jpg" alt="User Avatar" class="avatar">
+            <h1 id="displayName">John Doe</h1>
+            <p id="displayPosition">Graphic Designer at XYZ Corp.</p>
+            <button class="edit-profile-button" onclick="editProfile()">Edit Profile</button>
+        </div>
+    </header>
+
+    <div id="profile-content">
+        <section class="profile-section">
+            <h2>About Me</h2>
+            <p id="displayAbout">Creative and passionate graphic designer with over 3 years of experience in the esports industry.</p>
+        </section>
+
+        <section class="profile-section">
+            <h2>Contact Information</h2>
+            <p>Email: <span id="displayEmail"></span></p>
+            <p>Phone: <span id="displayPhone"></span></p>
+            <p>Location: <span id="displayLocation"></span></p>
+        </section>
+
+        <section class="profile-section">
+            <a href="dashboard.html">
+                <button class="edit-profile-button" onclick="back()">Back</button>
+            </a>
+        </section>
+
+    </div>
+
+    <!-- Edit Form (Hidden by Default) -->
+    <div id="edit-form" style="display: none;">
+        <section class="profile-section">
+            <h2>Edit Profile</h2>
+            <form action="home.html" id="profileForm">
+                
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" value="John Doe">
+                
+                <label for="position">Position:</label>
+                <input type="text" id="position" value="Graphic Designer at XYZ Corp.">
+
+                <label for="about">About Me:</label>
+                <textarea id="about">Creative and passionate graphic designer with over 3 years of experience in the esports industry.</textarea>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" value="johndoe@example.com">
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" value="+123 456 7890">
+                
+                <label for="location">Location:</label>
+                <input type="text" id="location" value="New York, USA">
+                
+                <button type="button" onclick="saveProfile()">Save</button>
+                <button type="button" onclick="cancelEdit()">Cancel</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>
